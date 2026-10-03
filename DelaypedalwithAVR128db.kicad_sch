@@ -5,6 +5,159 @@
 	(uuid "df84d36d-d6d4-4d90-9a88-48fc6a8fe70c")
 	(paper "A4")
 	(lib_symbols
+		(symbol "Connector_Audio:NJ2FD-V"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 0 8.89 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "NJ2FD-V"
+				(at 0 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Connector_Audio:Jack_6.35mm_Neutrik_NJ2FD-V_Vertical"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.neutrik.com/en/product/nj2fd-v"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "6.35mm (1/4 in) Vertical Jack, Non-switching mono jack (T/S)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "audio jack receptacle mono phone headphone TS connector neutrik"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Jack*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "NJ2FD-V_0_1"
+				(rectangle
+					(start -3.81 0)
+					(end -2.54 -2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start -2.54 3.81)
+					(end 2.54 -2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0.635 -0.635) (xy 1.27 0) (xy 2.54 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 2.54) (xy -0.635 2.54) (xy -0.635 0) (xy -1.27 -0.635) (xy -1.905 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "NJ2FD-V_1_1"
+				(pin passive line
+					(at 5.08 2.54 180)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "S"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "T"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:C"
 			(pin_numbers
 				(hide yes)
@@ -1179,6 +1332,30 @@
 		)
 		(uuid 2be820b9-a282-4de1-8401-8f99ef6b8698)
 	)
+	(rectangle
+		(start 13.97 151.13)
+		(end 109.22 189.23)
+		(stroke
+			(width 0)
+			(type default)
+			(color 0 0 0 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 87951e5c-3711-42b2-892d-b354605036c8)
+	)
+	(text "Bypass\n"
+		(exclude_from_sim no)
+		(at 18.034 148.59 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 0 0 0 1)
+			)
+		)
+		(uuid "50d9a042-2f20-43ab-8a7e-fd3a6d2c938a")
+	)
 	(text "Mixer\n"
 		(exclude_from_sim no)
 		(at 16.51 105.664 0)
@@ -1218,6 +1395,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "58ae18c5-43d6-47ca-ba8e-0543e3528595")
+	)
+	(junction
+		(at 78.74 168.91)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5b83e17f-7777-4e84-97a9-1f2a19afd599")
 	)
 	(junction
 		(at 111.76 99.06)
@@ -1385,6 +1568,36 @@
 	)
 	(wire
 		(pts
+			(xy 46.99 171.45) (xy 45.72 171.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4995895c-7ac0-465e-a34a-95bd2b6ea902")
+	)
+	(wire
+		(pts
+			(xy 78.74 168.91) (xy 88.9 168.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4a823af0-b654-47e5-a9bc-cfaf71417fb4")
+	)
+	(wire
+		(pts
+			(xy 76.2 168.91) (xy 78.74 168.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4eedb5a9-96aa-45e5-9952-8e09d8090549")
+	)
+	(wire
+		(pts
 			(xy 58.42 73.66) (xy 62.23 73.66)
 		)
 		(stroke
@@ -1412,6 +1625,16 @@
 			(type default)
 		)
 		(uuid "53dc128a-2efd-4fbb-b9cc-4e95e7b80e6d")
+	)
+	(wire
+		(pts
+			(xy 27.94 66.04) (xy 27.94 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "55beabfd-3d57-44e0-9675-47293de8453d")
 	)
 	(wire
 		(pts
@@ -1452,6 +1675,16 @@
 			(type default)
 		)
 		(uuid "5f23d8b3-e138-42d5-b248-0e2e68bf149b")
+	)
+	(wire
+		(pts
+			(xy 62.23 168.91) (xy 68.58 168.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "621bc635-db5e-43a3-b876-472f8d066c55")
 	)
 	(wire
 		(pts
@@ -1545,6 +1778,26 @@
 	)
 	(wire
 		(pts
+			(xy 88.9 171.45) (xy 88.9 173.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a48a936e-1375-4edf-8de5-17e2187ad15b")
+	)
+	(wire
+		(pts
+			(xy 78.74 168.91) (xy 78.74 166.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a7fc8611-8eb1-4659-a1b3-72e5f2197090")
+	)
+	(wire
+		(pts
 			(xy 38.1 73.66) (xy 41.91 73.66)
 		)
 		(stroke
@@ -1625,6 +1878,16 @@
 	)
 	(wire
 		(pts
+			(xy 60.96 179.07) (xy 62.23 179.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d3b9b21d-d29b-493f-b5e3-0a74a2a6d84b")
+	)
+	(wire
+		(pts
 			(xy 41.91 71.12) (xy 41.91 73.66)
 		)
 		(stroke
@@ -1693,6 +1956,16 @@
 		)
 		(uuid "17b56b70-6525-4355-bc51-b8850b83fb15")
 	)
+	(label "Audio output 1"
+		(at 46.99 166.37 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "18873e9f-e838-4c89-8ced-e390dbe08dd9")
+	)
 	(label "Wet positive signal"
 		(at 34.29 133.35 180)
 		(effects
@@ -1744,6 +2017,16 @@
 		(uuid "d4737710-3bf6-4514-964c-175c7377dd20")
 	)
 	(label "Dry positive signal"
+		(at 45.72 171.45 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "db6a0d9b-c617-43c7-beb5-7b489f71372d")
+	)
+	(label "Dry positive signal"
 		(at 134.62 78.74 0)
 		(effects
 			(font
@@ -1753,9 +2036,31 @@
 		)
 		(uuid "f9acdcdd-071f-4bc6-9418-b6752288ebad")
 	)
-	(global_label "Audio Input"
+	(global_label "Audio outpu"
 		(shape input)
-		(at 27.94 73.66 180)
+		(at 86.36 168.91 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "a2c66241-0ed5-4d78-9442-10378084c6f4")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 86.36 154.4951 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "Audio input"
+		(shape input)
+		(at 29.21 73.66 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1763,9 +2068,9 @@
 			)
 			(justify right)
 		)
-		(uuid "75c5dbaf-2b66-4840-b25c-92bcc17156f9")
+		(uuid "ffa0bee2-785d-445e-af5a-385c3af820f6")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 14.0693 73.66 0)
+			(at 29.21 87.5307 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2243,6 +2548,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GNDA")
+		(at 27.94 66.04 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1fe6fd53-1a6c-46b0-9390-4e45ce4f153b")
+		(property "Reference" "#PWR05"
+			(at 27.94 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GNDA"
+			(at 27.94 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 27.94 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 27.94 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GNDA\" , analog ground"
+			(at 27.94 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ed8f8b52-5839-43c4-8ca3-3dea3eb697e3")
+		)
+		(instances
+			(project ""
+				(path "/df84d36d-d6d4-4d90-9a88-48fc6a8fe70c"
+					(reference "#PWR05")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 34.29 73.66 90)
 		(unit 1)
@@ -2447,6 +2818,72 @@
 	)
 	(symbol
 		(lib_id "power:GNDA")
+		(at 88.9 173.99 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "385412db-f3a5-4bc1-89d7-96c1f2aa9548")
+		(property "Reference" "#PWR06"
+			(at 88.9 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GNDA"
+			(at 88.9 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 88.9 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 88.9 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GNDA\" , analog ground"
+			(at 88.9 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f306dc44-188d-4bc4-8ad6-136583052e42")
+		)
+		(instances
+			(project ""
+				(path "/df84d36d-d6d4-4d90-9a88-48fc6a8fe70c"
+					(reference "#PWR06")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GNDA")
 		(at 71.12 81.28 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2635,7 +3072,7 @@
 	)
 	(symbol
 		(lib_id "Relay:Relay_SPDT")
-		(at 41.91 161.29 0)
+		(at 54.61 173.99 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2644,25 +3081,23 @@
 		(fields_autoplaced yes)
 		(uuid "5d599ae6-d54d-448b-be2d-f40d00861803")
 		(property "Reference" "K1"
-			(at 53.34 160.0199 0)
+			(at 54.61 158.75 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Value" "Relay_SPDT"
-			(at 53.34 162.5599 0)
+			(at 54.61 161.29 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 53.34 162.56 0)
+			(at 55.88 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2672,7 +3107,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 41.91 161.29 0)
+			(at 54.61 173.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2681,7 +3116,7 @@
 			)
 		)
 		(property "Description" "Relay SPDT, monostable, EN50005"
-			(at 41.91 161.29 0)
+			(at 54.61 173.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2848,6 +3283,76 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 78.74 162.56 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6fbd76a9-859c-4f1c-aae3-e6fe6ca9703e")
+		(property "Reference" "R7"
+			(at 81.28 161.2899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1M"
+			(at 81.28 163.8299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 76.962 162.56 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 78.74 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 78.74 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "4045b35b-18c3-4ce2-8164-318cef54396f")
+		)
+		(pin "1"
+			(uuid "060f2ffa-6f3f-489d-ae02-845f43cdd505")
+		)
+		(instances
+			(project ""
+				(path "/df84d36d-d6d4-4d90-9a88-48fc6a8fe70c"
+					(reference "R7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_Potentiometer")
 		(at 121.92 88.9 270)
 		(unit 1)
@@ -2983,6 +3488,212 @@
 			(project ""
 				(path "/df84d36d-d6d4-4d90-9a88-48fc6a8fe70c"
 					(reference "R1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Audio:NJ2FD-V")
+		(at 93.98 168.91 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "74ee8e21-9759-41da-953f-b42ca4ea5cd7")
+		(property "Reference" "J2"
+			(at 99.06 168.2749 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "NJ2FD-V"
+			(at 99.06 170.8149 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Connector_Audio:Jack_6.35mm_Neutrik_NJ2FD-V_Vertical"
+			(at 93.98 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.neutrik.com/en/product/nj2fd-v"
+			(at 93.98 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "6.35mm (1/4 in) Vertical Jack, Non-switching mono jack (T/S)"
+			(at 93.98 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "T"
+			(uuid "836cbda6-a16d-4cc6-a767-00a94c11b70e")
+		)
+		(pin "S"
+			(uuid "06a59749-a07f-4dbb-aff5-9f95a4fdc515")
+		)
+		(instances
+			(project ""
+				(path "/df84d36d-d6d4-4d90-9a88-48fc6a8fe70c"
+					(reference "J2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Audio:NJ2FD-V")
+		(at 22.86 73.66 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "77451874-1ffe-4fb8-b58b-58e43ad85fc8")
+		(property "Reference" "J1"
+			(at 22.225 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "NJ2FD-V"
+			(at 22.225 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_Audio:Jack_6.35mm_Neutrik_NJ2FD-V_Vertical"
+			(at 22.86 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.neutrik.com/en/product/nj2fd-v"
+			(at 22.86 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "6.35mm (1/4 in) Vertical Jack, Non-switching mono jack (T/S)"
+			(at 22.86 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "S"
+			(uuid "410df25b-75ce-4e72-857b-8333569da80d")
+		)
+		(pin "T"
+			(uuid "42b7d18b-e8f4-433e-a53a-644a40054e39")
+		)
+		(instances
+			(project ""
+				(path "/df84d36d-d6d4-4d90-9a88-48fc6a8fe70c"
+					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 72.39 168.91 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7b0ca100-0d8e-468f-a077-03aeddbe6451")
+		(property "Reference" "C9"
+			(at 72.39 161.29 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10uF"
+			(at 72.39 163.83 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 76.2 167.9448 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 72.39 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 72.39 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "5d319bfa-dfc2-4c5f-9a12-7859ae0561e7")
+		)
+		(pin "1"
+			(uuid "6d53ed8a-fb97-4ee5-a1b6-ebf1509e903e")
+		)
+		(instances
+			(project ""
+				(path "/df84d36d-d6d4-4d90-9a88-48fc6a8fe70c"
+					(reference "C9")
 					(unit 1)
 				)
 			)
@@ -3947,6 +4658,72 @@
 			(project ""
 				(path "/df84d36d-d6d4-4d90-9a88-48fc6a8fe70c"
 					(reference "C5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GNDA")
+		(at 78.74 158.75 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ebba0981-32af-4318-9ec1-7256cade043a")
+		(property "Reference" "#PWR07"
+			(at 78.74 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GNDA"
+			(at 78.74 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 78.74 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 78.74 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GNDA\" , analog ground"
+			(at 78.74 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "53a684f9-5e1f-4209-871c-5cab146083fd")
+		)
+		(instances
+			(project ""
+				(path "/df84d36d-d6d4-4d90-9a88-48fc6a8fe70c"
+					(reference "#PWR07")
 					(unit 1)
 				)
 			)
