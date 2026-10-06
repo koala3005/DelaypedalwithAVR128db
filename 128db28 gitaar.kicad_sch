@@ -5449,10 +5449,6 @@
 		(uuid "f40c62a3-7788-46dd-8aa8-a3f1b2ebb686")
 	)
 	(no_connect
-		(at 177.8 120.65)
-		(uuid "0633c113-e1e4-41fe-a9c8-04356316094b")
-	)
-	(no_connect
 		(at 177.8 130.81)
 		(uuid "074a356e-30d0-4d06-94bc-2a9eda907e15")
 	)
@@ -6939,6 +6935,16 @@
 			(justify left bottom)
 		)
 		(uuid "60cb5d01-ab2b-4385-bf35-a7b4ce98b50e")
+	)
+	(label "Delay pin"
+		(at 177.8 120.65 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "63b69c95-2032-434e-9106-bbae327249c8")
 	)
 	(label "Audio output 1"
 		(at 68.58 91.44 0)
