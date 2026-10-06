@@ -1,2 +1,4 @@
 *.lck
-/128db28 gitaar-backups
+/128db28 gitaar-backups/
+*.kicad_prl
+*#auto_saved_files#
